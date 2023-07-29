@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hwb(120 4% 96%);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Marvel', sans-serif;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d21617;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 25px 30% ;
+    width: 40%;
+    row-gap: 80px;
+    column-gap: 80px;
+    
+}
+
+.comentarios-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #84878a;
+    border-radius: 10px;
+    box-shadow: 1px  1px darkred;
+    color: hsl(0, 24%, 60%);
+    font-size: 15px;
+    padding: 20px;
+}
+
+.comentarios-banner:hover{
+    color: #ffffff;
+    border:5px solid white;
+    transition: .5s ;
+}
+
+
+footer{
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #ffffff;
+}
+
+.linkedin{
+    color: red;
+}
+.footer-navegation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 18px;
+    }
+    .footer-navegation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
