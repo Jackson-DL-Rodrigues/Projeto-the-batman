@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hwb(120 4% 96%);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Marvel', sans-serif;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d21617;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container-photos{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4vw;
+    padding: 2vw ;
+}
+
+.gallery-photos{
+    width: 220px;
+    height: 220px;
+    border: 5px solid #84878a;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px darkred;
+    filter: grayscale(80%);
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.gallery-photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-photos:hover{
+    transform: scale(1.2);
+    transition: .7s linear;
+    filter: grayscale(0);
+
+}
+
+footer{
+    height: 150px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #ffffff;
+}
+
+.linkedin{
+    color: red;
+}
+.footer-navegation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 18px;
+    }
+    .footer-navegation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .gallery-photos{
+        width: 160px;
+        height: 160px;
+    }
+
+    .gallery-photos:hover{
+        transform: scale(1.04);
+}
+}
